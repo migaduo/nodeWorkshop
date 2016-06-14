@@ -8,11 +8,19 @@ var USD = 0.891658976;
 var EUR = 1.121505;
 
 function euroToDollar(euroVal) {
-    return euroVal / USD;
+  var euroInput   = euroVal / USD;
+  var euroResult  = round(euroInput, 2);
+  return euroResult;
 }
 
 function dollarToEuro(dollarVal) {
-    return dollarVal / EUR;
+  var dollarInput   = dollarVal / EUR;
+  var dollarResult  = round(dollarInput, 2);
+  return dollarResult;
+}
+
+function round(value, decimals) {
+  return Number(Math.round(value+'e'+decimals)+'e-'+decimals);
 }
 
 module.exports = {
