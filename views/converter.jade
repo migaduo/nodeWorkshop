@@ -5,11 +5,18 @@ div
     label(for='eur') EUR:&nbsp;
     input(type='number',id='eur', placeholder='EUR', step='1', min='0', name='euroInput')
     input(type='submit', value='Calc now!', id='submitEur', class='submit')
-    p #{euro}
+    if locals.euro
+      p #{euro}
+    else
+      p 0
+
 div
   h3 Dollar to Euro
   form(action='/form', method='POST')
     label(for='usd') USD:&nbsp;
     input(type='number',id='usd', placeholder='USD', step='1', min='0', name='dollarInput')
     input(type='submit', value='Calc now!', id='submitUsd', class='submit')
-    p #{dollar}
+    if locals.dollar
+      p #{dollar}
+    else
+      p 0

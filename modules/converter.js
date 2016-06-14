@@ -1,7 +1,7 @@
+'use strict';
 // NodeJS Module
 // @content: Converting money
 // @author: Dirk Lipjes <dirk.lipjes@wfp2.com>
-'use strict';
 
 // Bid price
 var USD = 0.891658976;

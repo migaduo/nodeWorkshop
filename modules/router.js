@@ -1,5 +1,5 @@
-// Routing from ExpressJS
 'use strict';
+// Routing from ExpressJS
 
 var values = {
   euro: 0,

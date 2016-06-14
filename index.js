@@ -1,8 +1,8 @@
+'use strict';
 // NodeJS Application
 // @dep: Express, Jade
 // @author: Dirk Lipjes <dirk.lipjes@wfp2.com>
 // @version: 0.1
-'use strict';
 
 // ExpressJS init
 var express = require('express');
