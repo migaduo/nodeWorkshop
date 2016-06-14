@@ -10,12 +10,13 @@ class TemperaturSensor extends EventEmitter {
     }
 
     start() {
-        this.interval = setInterval(function () {
-            this.emit('data', {
+
+        this.interval = setInterval(() => {
+            this.emit('data',{
                 date: new Date(),
                 temperatur: Math.floor(Math.random() * 10000) / 100
             });
-        }.bind(this), 1000)
+        }, 1000)
     }
 
     stop() {
