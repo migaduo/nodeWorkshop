@@ -12,11 +12,18 @@ var app = express();
 app.set('view engine', 'jade');
 app.set('views', './views');
 
+// Setup Static files for ExpressJS
+app.use(express.static('public'));
+
 // Require modules
 var converter = require('./modules/converter');
 var router = require('./modules/router');
 var bodyParser = require('body-parser');
 
+// MomentJS in Jade
+app.locals.moment = require('moment');
+
+// BodyParser config
 app.use(bodyParser.urlencoded({ extended: false }));
 
 // Init Router

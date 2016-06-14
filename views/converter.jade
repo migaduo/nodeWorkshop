@@ -1,22 +1,20 @@
 script(type='text/javascript').
-div
-  h3 Euro to Dollar
+div.border-bottom
+  h3 Euro to US-Dollar
   form(action='/form', method='POST')
-    label(for='eur') EUR:&nbsp;
     input(type='number',id='eur', placeholder='EUR', step='1', min='0', name='euroInput')
-    input(type='submit', value='Calc now!', id='submitEur', class='submit')
+    input(type='submit', value='Convert now!', id='submitEur', class='submit')
     if locals.euro
-      p #{euro}
+      p #{euro} &#36;
     else
-      p 0
+      p 0 &#36;
 
 div
-  h3 Dollar to Euro
+  h3 US-Dollar to Euro
   form(action='/form', method='POST')
-    label(for='usd') USD:&nbsp;
     input(type='number',id='usd', placeholder='USD', step='1', min='0', name='dollarInput')
-    input(type='submit', value='Calc now!', id='submitUsd', class='submit')
+    input(type='submit', value='Convert now!', id='submitUsd', class='submit')
     if locals.dollar
-      p #{dollar}
+      p #{dollar} &euro;
     else
-      p 0
+      p 0 &euro;

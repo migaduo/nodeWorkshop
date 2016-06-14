@@ -1,13 +1,15 @@
 'use strict';
-// Routing from ExpressJS
-
+// @author: Dirk Lipjes <dirk.lipjes@wfp2.com>
+// Clean values for EUR and USD
 var values = {
   euro: 0,
   dollar: 0
 };
 
+// Require converter.js
 var converter = require('./converter');
 
+// Routing from ExpressJS
 function router (app) {
   app.get('/', function (req, res) {
     res.render('index.jade', values);
