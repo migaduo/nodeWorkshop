@@ -1,0 +1,15 @@
+script(type='text/javascript').
+div
+  h3 Euro to Dollar
+  form(action='/form', method='POST')
+    label(for='eur') EUR:&nbsp;
+    input(type='number',id='eur', placeholder='EUR', step='1', min='0', name='euroInput')
+    input(type='submit', value='Calc now!', id='submitEur', class='submit')
+    p #{euro}
+div
+  h3 Dollar to Euro
+  form(action='/form', method='POST')
+    label(for='usd') USD:&nbsp;
+    input(type='number',id='usd', placeholder='USD', step='1', min='0', name='dollarInput')
+    input(type='submit', value='Calc now!', id='submitUsd', class='submit')
+    p #{dollar}

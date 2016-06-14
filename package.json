@@ -1,0 +1,32 @@
+{
+  "name": "ratecalculator",
+  "version": "1.0.0",
+  "description": "This was a little application written on EnterJS 2016 with Sebastian Springer",
+  "main": "index.js",
+  "dependencies": {
+    "body-parser": "^1.15.1",
+    "express": "^4.13.4",
+    "jade": "^1.11.0",
+    "jquery": "^3.0.0"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/sspringer82/nodeWorkshop.git"
+  },
+  "keywords": [
+    "NodeJS",
+    "ExpressJS",
+    "Jade-Lang",
+    "EnterJS"
+  ],
+  "author": "Dirk Lipjes",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/sspringer82/nodeWorkshop/issues"
+  },
+  "homepage": "https://github.com/sspringer82/nodeWorkshop#readme"
+}
